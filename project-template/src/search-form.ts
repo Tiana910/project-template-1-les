@@ -7,7 +7,7 @@ function formatedDate(date:Date):string {
 export function renderSearchFormBlock (
   checkInDate:Date = new Date(Date.now() + 24*60*60*1000), 
   checkOutDate:Date = new Date(+checkInDate + 24*60*60*1000*2) 
-  ):void {
+):void {
 
   const dayCheckInDate = formatedDate(checkInDate);
   const dayCheckOutDate = formatedDate(checkOutDate) ;
